@@ -7,67 +7,46 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="tabs">
-    <button class="tab active" data-tab="home">Home</button>
-    <button class="tab" data-tab="bio">Bio</button>
-  </nav>
-
   <main class="content">
-    <section id="home" class="panel active">
-      <div class="container">
-        <h1>Hello, I'm Kaushik</h1>
-        <p>Welcome to my site. You can view or download my resume below.</p>
-        <a href="Kaushik_Resume.pdf" class="resume-btn" download>Download Resume (PDF)</a>
-      </div>
+    <section class="container hero">
+      <h1>Hello, I'm Kaushik</h1>
+      <p>Welcome to my site. You can view or download my resume below.</p>
+      <a href="Kaushik_Resume.pdf" class="resume-btn" download>Download Resume (PDF)</a>
     </section>
 
-    <section id="bio" class="panel">
-      <div class="container bio-container">
-        <h1>About Me</h1>
-        <p class="bio-intro">
-          I'm a software engineer at Cognizant with 1.6+ years of experience, focused on cloud and backend development. I started as a Pega developer and proactively moved into AWS and backend technologies—including Go—and have been building scalable, reliable systems ever since.
-        </p>
+    <section id="bio" class="container bio-container">
+      <h1>About Me</h1>
+      <p class="bio-intro">
+        I'm a software engineer at Cognizant with 1.6+ years of experience, focused on cloud and backend development. I started as a Pega developer and proactively moved into AWS and backend technologies—including Go—and have been building scalable, reliable systems ever since.
+      </p>
 
-        <div class="bio-section">
-          <h2>Growth & initiative</h2>
-          <p>I've completed <strong>three AWS certifications</strong> during my tenure: AWS AI Practitioner, AWS Cloud Practitioner, and AWS Developer Associate. I'm committed to learning beyond my immediate role and taking ownership of critical components on high-impact client projects.</p>
-        </div>
-
-        <div class="bio-section">
-          <h2>Technical contributions</h2>
-          <ul>
-            <li>Architected and deployed scalable cloud applications using <strong>AWS</strong> (Step Functions, Lambda, S3, DynamoDB, SSM) and <strong>Golang</strong>, handling high-volume transaction data.</li>
-            <li>Integrated <strong>Kafka</strong> for real-time event streaming and designed backend APIs with security and compliance in mind.</li>
-            <li>Built automated <strong>DevOps pipelines</strong> with Jenkins and Docker, increasing release frequency and reliability.</li>
-            <li>Drove adoption of <strong>Git workflows and CI/CD</strong>—branch strategies, code review, automated builds, and deployment pipelines—improving team velocity and release quality.</li>
-          </ul>
-        </div>
-
-        <div class="bio-section">
-          <h2>Collaboration & impact</h2>
-          <p>I work closely with QA, business analysts, and product owners to refine requirements and resolve incidents. Our systems maintain <strong>99.95% uptime</strong>. I championed standardized <strong>OpenAPI documentation</strong> and API testing (Postman and custom suites), which raised code quality and sped up onboarding for new developers.</p>
-        </div>
-
-        <div class="bio-section">
-          <h2>What I bring</h2>
-          <p>I take ownership beyond assigned tasks, proactively upskill in cloud and backend technologies, and deliver on client commitments. I'm eager to take on greater responsibility, mentor others, and contribute to architectural decisions as I grow.</p>
-        </div>
-
-        <a href="Kaushik_Resume.pdf" class="resume-btn" download>Download Resume (PDF)</a>
+      <div class="bio-section">
+        <h2>Growth & initiative</h2>
+        <p>I've completed <strong>three AWS certifications</strong> during my tenure: AWS AI Practitioner, AWS Cloud Practitioner, and AWS Developer Associate. I'm committed to learning beyond my immediate role and taking ownership of critical components on high-impact client projects.</p>
       </div>
+
+      <div class="bio-section">
+        <h2>Technical contributions</h2>
+        <ul>
+          <li>Architected and deployed scalable cloud applications using <strong>AWS</strong> (Step Functions, Lambda, S3, DynamoDB, SSM) and <strong>Golang</strong>, handling high-volume transaction data.</li>
+          <li>Integrated <strong>Kafka</strong> for real-time event streaming and designed backend APIs with security and compliance in mind.</li>
+          <li>Built automated <strong>DevOps pipelines</strong> with Jenkins and Docker, increasing release frequency and reliability.</li>
+          <li>Drove adoption of <strong>Git workflows and CI/CD</strong>—branch strategies, code review, automated builds, and deployment pipelines—improving team velocity and release quality.</li>
+        </ul>
+      </div>
+
+      <div class="bio-section">
+        <h2>Collaboration & impact</h2>
+        <p>I work closely with QA, business analysts, and product owners to refine requirements and resolve incidents. Our systems maintain <strong>99.95% uptime</strong>. I championed standardized <strong>OpenAPI documentation</strong> and API testing (Postman and custom suites), which raised code quality and sped up onboarding for new developers.</p>
+      </div>
+
+      <div class="bio-section">
+        <h2>What I bring</h2>
+        <p>I take ownership beyond assigned tasks, proactively upskill in cloud and backend technologies, and deliver on client commitments. I'm eager to take on greater responsibility, mentor others, and contribute to architectural decisions as I grow.</p>
+      </div>
+
+      <a href="Kaushik_Resume.pdf" class="resume-btn" download>Download Resume (PDF)</a>
     </section>
   </main>
-
-  <script>
-    document.querySelectorAll('.tab').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const tab = btn.dataset.tab;
-        document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-        btn.classList.add('active');
-        document.getElementById(tab).classList.add('active');
-      });
-    });
-  </script>
 </body>
 </html>
