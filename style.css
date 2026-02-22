@@ -359,6 +359,63 @@ body {
   margin: 0;
 }
 
+/* Project cards */
+.project-card {
+  margin-bottom: 2rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #343a40;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid #c35639;
+  display: inline-block;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: #495057;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.project-features {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  color: #495057;
+  line-height: 1.65;
+}
+
+.project-features li {
+  margin-bottom: 0.4rem;
+}
+
+.project-features strong {
+  color: #343a40;
+}
+
+.project-workflow {
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.65;
+  margin: 0 0 1rem;
+}
+
+.project-link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #c35639;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .layout {

@@ -24,7 +24,24 @@
 
     <main class="main">
       <h1 class="page-title">Projects</h1>
-      <p class="projects-placeholder">New projects will be listed here.</p>
+
+      <article class="project-card">
+        <h2 class="project-title">Clinical Adverse Event Detection AI</h2>
+        <p class="project-desc">
+          A system that helps healthcare teams identify and understand adverse events in clinical data. It combines advanced analytics with clear explanations to improve patient safety and meet compliance requirements. The architecture is modular and easy to extend or integrate with other tools.
+        </p>
+        <ul class="project-features">
+          <li><strong>Adverse Event Detection</strong> — Finds potential adverse events in clinical data using modern analytics.</li>
+          <li><strong>Explainability</strong> — Gives straightforward reasons and context for each event flagged.</li>
+          <li><strong>Flexible Data Ingestion</strong> — Handles both structured and unstructured healthcare data.</li>
+          <li><strong>RAG (Retrieval-Augmented Generation)</strong> — Combines data retrieval and generative models for better decision support.</li>
+          <li><strong>Modular Design</strong> — Backend split into <em>agent</em> (assessment intake, contract validation, detection API) and <em>ingestion</em> (data pipelines, vector embeddings).</li>
+        </ul>
+        <p class="project-workflow">
+          <strong>Workflow:</strong> Data ingestion → secure storage (e.g. MongoDB) → AI/ML processing for adverse event detection → RESTful API serving with explainable outputs. Built with Python, supports Docker, Azure OpenAI or HuggingFace, and LangSmith for observability.
+        </p>
+        <a href="https://github.com/kaushik-shankar-64/Clinical-adverse-event-detection-ai" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </article>
     </main>
   </div>
 </body>
