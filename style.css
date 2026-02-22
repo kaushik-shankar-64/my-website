@@ -52,9 +52,14 @@ body {
   background: rgba(255,255,255,0.35);
 }
 
-.sidebar-avatar {
+.sidebar-avatar,
+.sidebar-avatar-img {
   width: 80px;
   height: 80px;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-avatar {
   background: #5b9bd1;
   color: #fff;
   font-size: 1.75rem;
@@ -62,7 +67,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+}
+
+.sidebar-avatar-img {
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.4);
 }
 
 .sidebar-nav {
@@ -301,6 +312,28 @@ body {
   border-bottom: none;
 }
 
+/* Resume summary page */
+.resume-hero {
+  font-size: 1.1rem;
+  color: #495057;
+  margin: 0 0 1.75rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.resume-highlight {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  color: #495057;
+  line-height: 1.65;
+}
+
+.resume-cta {
+  margin: 2rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
 .cert-list {
   list-style: none;
   padding: 0;
@@ -502,7 +535,8 @@ body {
     padding: 1rem;
   }
 
-  .sidebar-avatar {
+  .sidebar-avatar,
+  .sidebar-avatar-img {
     margin-bottom: 0;
   }
 
