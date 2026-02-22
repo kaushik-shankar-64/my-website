@@ -1,0 +1,35 @@
+DO THESE 2 THINGS, THEN RUN THE DEPLOY SCRIPT
+=============================================
+
+STEP 1 — Log in to GitHub (if needed)
+-------------------------------------
+  A browser window should open to GitHub. Sign in (or create an account).
+
+
+STEP 2 — Create a new repository
+--------------------------------
+  1. Click the green "New" or "+" -> "New repository"
+  2. Repository name:  my-website   (or any name you like)
+  3. Leave "Add a README" UNCHECKED
+  4. Click "Create repository"
+
+
+STEP 3 — Run the deploy script
+------------------------------
+  In PowerShell, run:
+
+    cd C:\Users\kaush\my-website
+    .\deploy-to-github.ps1 -RepoUrl "https://github.com/YOUR_USERNAME/my-website.git"
+
+  Replace YOUR_USERNAME with your GitHub username.
+  Replace my-website with your repo name if you used something else.
+
+  When prompted to log in, use your GitHub username and a Personal Access Token
+  as the password (GitHub -> Settings -> Developer settings -> Personal access tokens).
+
+
+STEP 4 — Turn on GitHub Pages
+-----------------------------
+  On your repo page: Settings -> Pages -> Deploy from a branch -> main -> / (root) -> Save.
+
+  Your site will be live at:  https://YOUR_USERNAME.github.io/my-website/
